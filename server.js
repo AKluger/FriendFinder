@@ -12,5 +12,6 @@ app.use(express.json());
 
 // Routes
 // There will be multiple html routes and api routes referenced from distinct files
-
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 // there should be logic here to take in JSON post sent from user form and store as new user
