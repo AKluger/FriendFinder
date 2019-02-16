@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Old City2';
+    src: url('OldCity2-Regular.woff2') format('woff2'),
+        url('OldCity2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Obvious Philly Dingbats2';
+    src: url('ObviousPhillyDingbats2-Regular.woff2') format('woff2'),
+        url('ObviousPhillyDingbats2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,15 +1,47 @@
-@font-face  {
-    font-family: OlidCity-Regular;
-    src: url(OldCity-Regular.otf) format("opentype");
+@font-face {
+    font-family: 'Old City2';
+    src: url('fonts/OldCity2-Regular.woff2') format('woff2'),
+        url('fonts/OldCity2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WestPhilly4';
+    src: url('fonts/WestPhilly4-Regular.woff2') format('woff2'),
+        url('fonts/WestPhilly4-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
+/* @font-face {
+    font-family: 'Obvious Philly Dingbats2';
+    src: url('ObviousPhillyDingbats2-Regular.woff2') format('woff2'),
+        url('ObviousPhillyDingbats2-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+h1{
+    font-family: 'Old City2';
+    font-weight: normal;
+    font-style: normal;
+}
 select    {
     margin-bottom: 1em;
     max-width: 300px;
 }
 
 #submit {
+    font-family: 'WestPhilly4';
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+}
+
+.footer {
+    font-family: 'WestPhilly4';
+}
+
+#link   {
+    color: black;
 }
