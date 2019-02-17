@@ -19,15 +19,45 @@ module.exports = function (app) {
 
 
         // our friend that matches
-        var bestMatch;
-        var currentUser = JSON.parse(req.body);
-        for (var i = 0; i < friendsData.length; i++)
-            {if (currentUser.name!==friendsData[i].name)
-            {friendsData.push(req.body);}
-        res.json(true);}
-        //   logic to compare absolute values
+        var scoreMatch=50;
+        var currentUser = req.body;
+        for (var i = 0; i < friendsData.length; i++) {
+            if (currentUser.name !== friendsData[i].name) { friendsData.push(currentUser); 
+                var newArr = [];
+            for (var j = 0; j < friendsData[i].scores.length; j++) {
+               
+                var diff = function (a, b) { return Math.abs(a - b) }
+                var getSum = function (total, num) {
+                    return total + num;
+                }
+                var friendScore = friendsData[i].scores[j];
+                var userScore = req.body.scores[j];
+                newArr.push(diff(friendScore, userScore))
+                
+            }
+            // get total difference
+            var total = newArr.reduce(getSum);
+            if (total < scoreMatch)  {
+                scoreMatch = total
+                match = friendsData[i]
+
+            }
+            console.log(total);
+        }
+        console.log(scoreMatch)
+        console.log(match)
+    }
+        // res.json(true);}
+     
         // save match as bestMatch and send to modal ?
         // {for each score value compare to score value in res[i].scores }
     })
 
 }
+
+// compare value to i-1 and if less then that var now equals new number and return that name
+
+
+
+// compare each score to its respective score in current user
+// add up all of the comparison values

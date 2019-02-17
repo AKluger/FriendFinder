@@ -1,5 +1,6 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,129 +9,151 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/main.css">
 
 </head>
+
 <body>
-    <div class="container"> 
+    <div class="container">
         <h1>SURVEY QUESTIONS</h1>
         <hr>
-        <h3>ABOUT YOU</h3>
-        <div class="form-group">
-        <h5>Your Name (Required)</h5>
-        <input type="text" id="name" class= "form-control" required>
-        <h5>Link to Photo Image (Required)</h5>
-        <input type="text" id="photo" class= "form-control" required>
+        <form id="friendForm">
+            <h3>ABOUT YOU</h3>
+            <div class="form-group">
+                <h5>Your Name (Required)</h5>
+                <input type="text" id="name" class="form-control" required>
+                <h5>Link to Photo Image (Required)</h5>
+                <input type="text" id="photo" class="form-control" required>
+            </div>
+            <h3>Question 1</h3>
+            <h5>You consider yourself an independent person.</h5>
+            <select class="form-control" id="q1" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 2</h3>
+            <h5>You treat your neighbor like a sibling.</h5>
+            <select class="form-control" id="q2" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 3</h3>
+            <h5>You prefer your steak with cheese</h5>
+            <select class="form-control" id="q3" required>
+                <option value=""></option>
+                <option value="1">1 (never)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (always)</option>
+            </select>
+            <h3>Question 4</h3>
+            <h5></h5>
+            <select class="form-control" id="q4" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 5</h3>
+            <h5>You use the term "jawn" in conversation</h5>
+            <select class="form-control" id="q5" required>
+                <option value=""></option>
+                <option value="1">1 (never. WTF is a "jawn"?)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (all the freakin' time)</option>
+            </select>
+            <h3>Question 6</h3>
+            <h5>You consider potholes a feature, not a bug.</h5>
+            <select class="form-control" id="q6" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 7</h3>
+            <h5>You find bells liberating.</h5>
+            <select class="form-control" id="q7" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 8</h3>
+            <h5>The eagle is your favorite bird.</h5>
+            <select class="form-control" id="q8" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 9</h3>
+            <h5>You are a gritty person.</h5>
+            <select class="form-control" id="q9" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <h3>Question 10</h3>
+            <h5>Philadelphia is your favorite city on earth.</h5>
+            <select class="form-control" id="q10" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <button type="submit" class=" btn btn-primary btn-block btn-lg" id="submit">I'M FINISHED</button>
+            <!-- consider disabling until all fields are filled active vs nonactive state -->
+            <!-- questions in form with submit -->
+        </form>
+        <footer class="footer">
+            <div class="container">
+                <p> <a id="link" href="/api/friends">API FRIENDS LIST</a></p>
+            </div>
+
     </div>
-        <h3>Question 1</h3>
-        <h5>You consider yourself an independent person.</h5>
-        <select class="form-control" id="q1">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 2</h3>
-        <h5>You treat your neighbor like a sibling.</h5>
-        <select class="form-control" id="q2">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 3</h3>
-        <h5>You prefer your steak with cheese</h5>
-        <select class="form-control" id="q3">
-        <option value=""></option>
-        <option value="1">1 (never)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (always)</option>
-    </select>
-        <h3>Question 4</h3>
-        <h5></h5>
-        <select class="form-control" id="q4">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 5</h3>
-        <h5>You use the term "jawn" in conversation</h5>
-        <select class="form-control" id="q5">
-        <option value=""></option>
-        <option value="1">1 (never. WTF is a "jawn"?)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (all the freakin' time)</option>
-    </select>
-        <h3>Question 6</h3>
-        <h5>You consider potholes a feature, not a bug.</h5>
-        <select class="form-control" id="q6">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 7</h3>
-        <h5>You find bells liberating.</h5>
-        <select class="form-control" id="q7">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 8</h3>
-        <h5>The eagle is your favorite bird.</h5>
-        <select class="form-control" id="q8">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 9</h3>
-        <h5>You are a gritty person.</h5>
-        <select class="form-control" id="q9">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-        <h3>Question 10</h3>
-        <h5>Philadelphia is your favorite city on earth.</h5>
-        <select class="form-control" id="q10">
-        <option value=""></option>
-        <option value="1">1 (strongly disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (strongly agree)</option>
-    </select>
-    <button type="submit" class=" btn btn-primary btn-block btn-lg" id="submit">I'M  FINISHED</button>
-    <!-- consider disabling until all fields are filled active vs nonactive state -->
-<!-- questions in form with submit -->
-<footer class="footer">
-        <div class="container">
-            <p> <a id="link" href="/api/friends">API FRIENDS LIST</a></p>
-        </div>
-    </div>
+    <div class="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Meet Your Match!</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="match"></p>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
 </body>
+
 </html>
 
 <!-- modal to display resulting match -->
@@ -138,59 +161,40 @@
 <script type="text/javascript">
 
 
+    // window.onload = function () {
+    document.getElementById("submit").onclick = function () {
 
-// form validation
-function validateForm() {
-    var isValid = true;
-    document.getElementById("form-control").each(function() {
-        if (this.val() === "")  {
-            isValid = false;
+        var friendForm = document.getElementById('friendForm');
+        isValid = friendForm.checkValidity();
+
+        // ajax post to friends api
+        if (isValid) {
+            var userData = {
+                "name": document.getElementById("name").value,
+                "photo": document.getElementById("photo").value,
+                "scores": [
+                    +document.getElementById("q1").value,
+                    +document.getElementById("q2").value,
+                    +document.getElementById("q3").value,
+                    +document.getElementById("q4").value,
+                    +document.getElementById("q5").value,
+                    +document.getElementById("q6").value,
+                    +document.getElementById("q7").value,
+                    +document.getElementById("q8").value,
+                    +document.getElementById("q9").value,
+                    +document.getElementById("q10").value
+                ]
+            }
+            var request = new XMLHttpRequest();
+            request.open('POST', '/api/friends', true);
+            request.setRequestHeader('Content-Type', "application/json;charset=UTF-8");
+            request.send(JSON.stringify(userData));
+
+            $("#match").text(data.name)
+            $(".modal").modal("toggle");
         }
-    })
-    return isValid;
-}
-
-
-// ajax post to friends api
-if (validateForm)   {
-    var userData = {
-        "name": document.getElementById("name").value,
-        "photo": document.getElementById("photo").value,
-        "scores" :[
-            document.getElementById("q1").value,
-            document.getElementById("q2").value,
-            document.getElementById("q3").value,
-            document.getElementById("q4").value,
-            document.getElementById("q5").value,
-            document.getElementById("q6").value,
-            document.getElementById("q7").value,
-            document.getElementById("q8").value,
-            document.getElementById("q9").value,
-            document.getElementById("q10").value
-        ]
+        else { alert("Finish this jawn!") }
     }
-    var request = new XMLHttpRequest();
-request.open('POST', '/api/friends', true);
-request.setRequestHeader('Content-Type', "application/json;charset=UTF-8");
-request.send(JSON.stringify(userData));
-
-}
-
-else {alert("Please fill out all jawns on the form!!!@")}
-
-
-window.onload = function () {
-document.getElementById("submit").onclick = function(event) {
-
-addFriend();
-
-
-
-
-
-}
-
-}
 
 
 </script>
