@@ -135,6 +135,65 @@
 
 <!-- modal to display resulting match -->
 
+<script type="text/javascript">
+
+
+
+// form validation
+function validateForm() {
+    var isValid = true;
+    document.getElementById("form-control").each(function() {
+        if (this.val() === "")  {
+            isValid = false;
+        }
+    })
+    return isValid;
+}
+
+
+// ajax post to friends api
+if (validateForm)   {
+    var userData = {
+        "name": document.getElementById("name").value,
+        "photo": document.getElementById("photo").value,
+        "scores" :[
+            document.getElementById("q1").value,
+            document.getElementById("q2").value,
+            document.getElementById("q3").value,
+            document.getElementById("q4").value,
+            document.getElementById("q5").value,
+            document.getElementById("q6").value,
+            document.getElementById("q7").value,
+            document.getElementById("q8").value,
+            document.getElementById("q9").value,
+            document.getElementById("q10").value
+        ]
+    }
+    var request = new XMLHttpRequest();
+request.open('POST', '/api/friends', true);
+request.setRequestHeader('Content-Type', "application/json;charset=UTF-8");
+request.send(JSON.stringify(userData));
+
+}
+
+else {alert("Please fill out all jawns on the form!!!@")}
+
+
+window.onload = function () {
+document.getElementById("submit").onclick = function(event) {
+
+addFriend();
+
+
+
+
+
+}
+
+}
+
+
+</script>
 
 
 
