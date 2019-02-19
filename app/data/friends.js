@@ -6,8 +6,13 @@ scores: [
     3,4,3,4,3,4,1,4,5,3
 ]},{
 name: "Carson",
-photo:"asdasdasd",
-scores:  [5,5,5,5,5,5,4,5,5,5]
+photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpRr5AzsUkT8s8uCler6y-eeNRL_gGXIST_00G2gctXKNSfjJ_QQ",
+scores:  [5,5,4,5,5,3,4,5,5,5]
+},
+{
+    name: "Gritty",
+    photo:"https://media.newyorker.com/photos/5bbd10430cdf452cf93ca22f/master/w_2046,c_limit/Crouch-Gritty.jpg",
+    scores: [5,5,5,5,5,5,5,5,5,5]
 }
 ];
 

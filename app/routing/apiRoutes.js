@@ -17,7 +17,7 @@ module.exports = function (app) {
     // route for POST handles incoming submission AND comparision logic to detemrine if its a match
     app.post("/api/friends", function (req, res) {
 
-        res.json(true);
+        // res.json(true);
         // our friend that matches
         var scoreMatch=50;
         var currentUser = req.body;
@@ -51,17 +51,7 @@ module.exports = function (app) {
     console.log(scoreMatch)
     console.log(match)
     friendsData.push(currentUser)
-        
-     
-        // save match as bestMatch and send to modal ?
-        // {for each score value compare to score value in res[i].scores }
+    res.json(match);
     })
 
 }
-
-// compare value to i-1 and if less then that var now equals new number and return that name
-
-
-
-// compare each score to its respective score in current user
-// add up all of the comparison values

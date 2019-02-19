@@ -15,13 +15,23 @@
 }
 
 
-/* @font-face {
+@font-face {
     font-family: 'Obvious Philly Dingbats2';
-    src: url('ObviousPhillyDingbats2-Regular.woff2') format('woff2'),
-        url('ObviousPhillyDingbats2-Regular.woff') format('woff');
+    src: url('fonts/ObviousPhillyDingbats2-Regular.woff2') format('woff2'),
+        url('fonts/ObviousPhillyDingbats2-Regular.woff') format('woff'),
+        local('fonts/ObviousPhillyDingbats2-Regular.woff');
     font-weight: normal;
     font-style: normal;
-} */
+}
+
+body {
+    
+    background-image: linear-gradient(to bottom right, #a5acaf, #acc0c6, #004c54);
+}
+
+.btn { background-image: linear-gradient(to bottom right, black, #acc0c6);
+color: white;}
+
 h1{
     font-family: 'Old City2';
     font-weight: normal;
@@ -41,7 +51,30 @@ select    {
 .footer {
     font-family: 'WestPhilly4';
 }
-
+h3  {
+    
+    font-family: 'WestPhilly4';
+}
+#title  {
+    font-family: 'WestPhilly4';
+}
 #link   {
     color: black;
+}
+h2   {
+    font-family: 'Obvious Philly Dingbats2';
+}
+
+#logo    {
+    font-size: 120px;
+    color: black;
+    font-family: 'Obvious Philly Dingbats2';
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+#photo  {
+    width: 200px;
+    height: 200px;
 }
