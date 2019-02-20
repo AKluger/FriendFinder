@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Philly FriendFinder Survey</title>
+    <title>Philly Friend Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -16,15 +16,22 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./main.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./main.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <style>
+        html, body, pre, code, kbd, samp {
+            font-family: 'Press Start 2P', cursive;
+        }
+      </style>
 </head>
 
 <body>
     <div class="container">
         <h1>SURVEY QUESTIONS</h1>
         <hr>
-        <form id="friendForm">
-            <h3>ABOUT YOU</h3>
+        <form class="form nes-container with-title" id="friendForm">
+            <h3 class="title" >ABOUT YOU</h3>
             <div class="form-group">
                 <h5>Your Name (Required)</h5>
                 <input type="text" id="name" class=" form-control mb-3" required>
@@ -33,7 +40,7 @@
             </div>
             <h3>Question 1</h3>
             <h5>You consider yourself an independent person.</h5>
-            <select class=" form-control mb-3" id="q1" required>
+            <select class=" form-control mb-3 selects" id="q1" required>
                 <option value=""></option>
                 <option value="1">1 (strongly disagree)</option>
                 <option value="2">2</option>
@@ -42,7 +49,7 @@
                 <option value="5">5 (strongly agree)</option>
             </select>
             <h3>Question 2</h3>
-            <h5>You treat your neighbor like a sibling.</h5>
+            <h5>You treat your neighbor like a brother.</h5>
             <select class=" form-control mb-3" id="q2" required>
                 <option value=""></option>
                 <option value="1">1 (strongly disagree)</option>
@@ -131,11 +138,12 @@
                 <option value="4">4</option>
                 <option value="5">5 (strongly agree)</option>
             </select>
-            <button type="submit" class=" btn btn-secondary btn-block btn-lg" id="submit">I'M FINISHED</button>
+            <button type="submit" class=" btn btn-secondary btn-block btn-lg nes-btn" id="submit">I'M FINISHED</button>
         </form>
         <footer class="footer">
-            <div class="container">
+            <div class="container d-flex flex-row">
                 <p> <a id="link" href="/api/friends">API FRIENDS LIST</a></p>
+                <a href="https://github.com/AKluger/FriendFinder"><i class = "nes-octocat animate"> </i></a>
             </div>
         </footer>
     </div>
