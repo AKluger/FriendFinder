@@ -1,8 +1,8 @@
 # FRIENDFINDER
 
-### Summary
+### Summary / Using The App
 
-This app will match friends with similar interests.  The user will fill out a questionnare and upon submission will be provided with a match.  The site will be hosted on Heroku and use express with api calls to send and request user info for the purpose of creating matches.
+This app matches friends with similar interests.  The user fills out a questionnare and upon submission is provided with a match.  The site is hosted on Heroku and uses express.JS with api calls to send and request user info for the purpose of creating matches.
 
 
 ### Technologies Used
@@ -11,3 +11,4 @@ This app will match friends with similar interests.  The user will fill out a qu
 * express.JS
 * jQuery
 * HTML/CSS
+* NES.css [link](https://nostalgic-css.github.io/NES.css/)
